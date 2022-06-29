@@ -1,0 +1,358 @@
+body{
+    font-family: sans-serif;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+a{
+    text-decoration: none;
+}
+
+.flex-row{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.btn{
+    cursor: pointer;
+    padding: .8rem 2rem;
+    text-transform: capitalize;
+    font-size: 1.05rem;
+    letter-spacing: 1px;
+    outline: none;
+    border: none;
+    colour : #fff;
+    background: linear-gradient(to right, rgb(4, 120, 236), rgb(221, 6, 221));
+    border-radius: 2rem;
+}
+
+.home{
+    min-height: 100vh;
+    position: relative;
+    background: url(https://ik.imagekit.io/vdpx5zbpu/beach-yoga1_1iCkrqFtj.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1656426879651) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.nav{
+    min-height: 10vh;
+    justify-content: space-between;
+    padding: 0 2rem;
+    align-items: center;
+}
+
+.logo{
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+  color: #000;
+}
+
+.content{
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    width: 800px;
+    height: 450px;
+    padding: 1rem;
+}
+
+.content h2{
+    font-size: 4.5rem;
+    text-transform: capitalize;
+    line-height: 1.3;
+    margin-bottom: 1rem;
+    color:rgb(4, 120, 236);
+}
+
+.content p{
+    font-size: 1.5rem;
+    line-height: 2;
+    margin-bottom: 1rem;
+    color: #fff;
+}
+
+.classes{
+    position: absolute;
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    background: linear-gradient(to left, rgb(4, 120, 236), rgb(221, 6, 221));
+    top: 45%;
+    right: 1%;
+    display: grid;
+    place-items: center;
+}
+
+.classes a{
+    font-size: 1.1rem;
+    text-transform: capitalize;
+    color: #fff;
+    text-align: center;
+}
+
+/* about page */
+.about_page{
+    min-height: 100vh;
+    position: relative;
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: 40% 60%;
+}
+
+.right_about{
+    overflow: hidden;
+    border-radius: 1rem;
+}
+
+.right_about img{
+    transition: all .4s linear;
+}
+
+.right_about img:hover{
+    transform: scale(1.05);
+}
+
+.left_about{
+    padding: 1rem;
+}
+
+.left_about h2{
+    font-size: 3rem;
+    line-height: 1.3;
+    margin-bottom: 2rem;
+    text-transform: capitalize;
+}
+
+.left_about p{
+    font-size: 1.4rem;
+    line-height: 2;
+}
+
+/* activities page */
+:is(.tutors, .activities){
+    min-height: 50vh;
+    position: relative;
+    padding: 1rem;
+}
+
+.acty{
+    width: 580px;
+    height: 300px;
+    border-radius: 1rem;
+    margin: 1rem 20rem;
+    display: grid;
+    grid-template-columns: 70% 30%;
+    overflow: hidden;
+}
+
+.img_div{
+    overflow: hidden;
+}
+
+.img_div img{
+    transform: scale(0.9);
+    transition: all .2s linear;
+}
+
+.img_div img:hover{
+    transform: scale(1);
+}
+
+.cont_div{
+    padding: 1rem;
+}
+
+.cont_div p{
+    font-size: 1rem;
+    line-height: 2;
+    color: rgb(4, 12, 236);
+}
+
+/* tutor div */
+.tutors{
+    justify-content: space-around;
+}
+
+.tutor_div{
+    width: 500px;
+    height: 600px;
+    align-items: center;
+    padding: 2rem;
+    background: linear-gradient(to bottom, rgb(4, 120, 236), rgb(221, 6, 221));
+    border-radius: 1rem;
+}
+
+.tutor_div img{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+}
+
+.flex-col{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.tutor_div h2{
+    margin-top: 2rem;
+    font-size: 2rem;
+    color: #fff;
+}
+
+.tutor_div p{
+    font-size: 1rem;
+    margin-top: 1rem;
+    text-transform: capitalize;
+    color: #fff;
+}
+
+.footer{
+    min-height: 7vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer p{
+    font-size: 1rem;
+}
+
+@media only screen and (max-width: 1400px){
+    .content{
+        left: 35%;
+        width: 800px;
+        height: 450px;
+    }
+}
+
+@media only screen and (max-width: 1200px){
+    .content{
+        left: 35%;
+        width: 700px;
+        height: 450px;
+    }
+
+    .content h2{
+        font-size:3.8rem;
+    }
+
+    .content p{
+        font-size: 1rem;
+    }
+
+    .classes{
+        width: 100px;
+        height: 100px;
+        right: 2%;
+    }
+    .classes a{
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (max-width: 1060px){
+    .content{
+        left: 40%;
+    }
+
+    .content h2{
+        font-size: 3.8rem;
+    }
+
+    .classes{
+        width: 80px;
+        height: 80px;
+        right: 2%;
+    }
+
+    .classes a{
+        font-size: .9rem;
+    }
+
+    .tutor_div{
+        margin: 1.5rem 0;
+    }
+}
+
+@media only screen and (max-width: 950px){
+    .content{
+        left: 45%;
+    }
+
+    .content h2{
+        font-size: 3rem;
+    }
+
+    .classes{
+        width: 80px;
+        height: 80px;
+        top: 80%;
+        right: 2%;
+    }
+    .about_page{
+        padding: 0;
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media only screen and (max-width: 750px){
+    .content{
+        left: 50%;
+        width: 100%;
+    }
+
+    .content h2, p{
+        word-break: break-all;
+    }
+}
+
+@media only screen and (max-width: 500px){
+    .content{
+        height: 500px;
+    }
+    .nav{
+        padding: 0 1rem;
+    }
+    .btn{
+        font-size: .9rem;
+        width: 200px;
+    }
+}
+
+@media only screen and (max-width: 450px){
+    .content{
+        height: 500px;
+    }
+    .nav{
+        padding: 0 1rem;
+    }
+    .btn{
+        font-size: .9rem;
+        width: 200px;
+    }
+    .content h2{
+        line-height: 1.2;
+    }
+
+    .content p{
+        line-height: 1.5;
+        margin: 0;
+    }
+}
